@@ -1,7 +1,6 @@
 # This image is specifically built for container based CI 
 # pipelines to deploy openedx, via Overhang.io's Tutor Application
 # into AWS.
-
 FROM alpine:3.12
 
 # Install additional dependencies
