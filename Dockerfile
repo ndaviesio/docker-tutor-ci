@@ -1,4 +1,4 @@
-# This image is specifically built for container based CI 
+# This image is specifically built for container based CI
 # pipelines to deploy openedx, via Overhang.io's Tutor Application
 # into AWS.
 FROM alpine:3.12
@@ -7,7 +7,7 @@ FROM alpine:3.12
 RUN apk add jq git curl docker alpine-sdk
 
 # Install Python Dependencies
-RUN apk add python3 py-pip
+RUN apk add python3 py-pip python3-dev
 RUN pip install awscli tutor-openedx boto3
 
 # Install Node Dependencies
