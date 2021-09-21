@@ -8,7 +8,7 @@ RUN apk add jq git curl docker alpine-sdk
 
 # Install Python Dependencies
 RUN apk add python3 py-pip python3-dev
-RUN pip install awscli tutor-openedx boto3
+RUN pip install awscli tutor boto3
 
 # Install Node Dependencies
 RUN apk add nodejs npm
