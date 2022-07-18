@@ -4,7 +4,7 @@
 FROM alpine:3.12
 
 # Install additional dependencies
-RUN apk add jq git curl docker alpine-sdk
+RUN apk add jq git openssh-client curl docker alpine-sdk
 
 # Install Python Dependencies
 RUN apk add python3 py-pip python3-dev
